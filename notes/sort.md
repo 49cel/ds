@@ -25,27 +25,33 @@
 
     round 1:
 
-    ``array: 3 5 2 4
+    ```
+    array: 3 5 2 4
     compare with 3: is 3 bigger than 5? no -> stop
     key goes right after position 0, which is position 1 (where it already was)
-    array: 3 5 2 4          left zone is now 3 5``
+    array: 3 5 2 4          left zone is now 3 5
+    ```
 
     round 2:
 
-    ``array: 3 5 2 4
+    ```
+    array: 3 5 2 4
     compare with 5 (j=1): is 5 bigger than 2? yes -> copy 5 one step right
     array: 3 5 5 4          (the old 2 is gone from the array, but it is saved in key)
     compare with 3 (j=0): is 3 bigger than 2? yes -> copy 3 one step right
     array: 3 3 5 4
     j is now -1, nothing left to look at -> stop
     key goes at position j+1 = 0
-    array: 2 3 5 4          left zone is now 2 3 5``
+    array: 2 3 5 4          left zone is now 2 3 5
+    ```
 
     round 3: 
 
-    ``array: 2 3 5 4
+    ```
+    array: 2 3 5 4
     compare with 5 (j=2): is 5 bigger than 4? yes -> copy 5 one step right
     array: 2 3 5 5
     compare with 3 (j=1): is 3 bigger than 4? no -> stop
     key goes at position j+1 = 2
-    array: 2 3 4 5          done``
+    array: 2 3 4 5          done
+    ```
